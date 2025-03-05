@@ -1,4 +1,6 @@
-# Three.js Journey
+# Simple Organism Life simulator
+
+you can check it here: https://bartrobat.com/sols
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
