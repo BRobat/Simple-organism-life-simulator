@@ -1,0 +1,10 @@
+node_modules
+package-lock.json
+apphosting.yaml
+/static
+/dist
+/firebase
+.firebase
+.firebaserc
+firebase.json
+.DS_Store

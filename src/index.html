@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <canvas class="webgl"></canvas>
+    <div id="basicInfo" class="main-box">
+        <div class="top-bar">
+            <button id="closeInfoAction" class="btn">X</button> version 0.2.2
+        </div>
+        <div class="scrollable-content">
+            <h2>
+                TLDR:
+            </h2>
+            <p> This is a simple organism life simulator (SOLS) on a planet. Enjoy looking at the little creatures spreading and
+                fighting 
+                over resources.</p>
+            <h2>
+                What you’re looking at:
+            </h2>
+            <p>
+                There is a planet that serves as the basic ground for the whole simulation. A sun that provides light. There are rocks that act as a blockade. And of course, little
+                colorful creatures trying to do their best at living. Critters also have some colored meshes that indicates an action. Red is when critter is attacking, purple when it's defending and green when reproducing.
+            </p>
+            <h2>
+                Simulation rules:
+            </h2>
+            <p>
+                Every simulation has some set of rules. Let it
+                be
+                gravity (which acts more or less the same in this simulation and real life) or the fact that every
+                critter
+                life
+                will eventually come to an end (the difference being that they don’t pay taxes). Also they don’t eat,
+                but
+                regenerate energy in sunlight and when they die they leave a “disc” which enables creatures from other
+                species to
+                reproduce. During reproduction the disc copies attributes from a "parent" and slightly modifies them. That's how evolution works. They also move by jumping and have cute little faces. Critters act according to their
+                environment
+                but
+                how is up to them. 
+            </p>
+            <h2>
+                What you can do:
+            </h2>
+            <p>
+                Not much really… for now. You can move the view around. Toggle automatic view. Reset the simulation to tinker with some basic properties of a simulation and
+                click on
+                the critters to check their stats.
+            </p>
+            <h2>
+                Story behind:
+            </h2>
+            <p>
+                Idea of an ecosystem simulator was (boiling) in me for quite a long time. As a child I was playing
+                a
+                game
+                called Gungan Frontier (educational game set in the starwars   universe). It was a game from the 90s and
+                I
+                wasn’t
+                able to run it on a more modern machines. When spore came out I believed it was it, an ecosystem
+                simulator.
+                But
+                it wasn’t. It was an ecosystem themed creature maker. After I started my programming career there was a
+                lot
+                of
+                ideas of simulators of various kind. And few months ago I thought that I should do some small and
+                easy
+                project following an idea of an ecosystem simulator sparkled with some evolution which will serve as a
+                foundation of future more complex projects. This was set to be made in few weeks and here we are few
+                months
+                later.
+            </p>
+            <h2>
+
+            </h2>
+            <p>
+
+
+            </p>
+            <h2>
+
+            </h2>
+            <p>
+
+
+            </p>
+        </div>
+    </div>
+    <div id="restartBox" class="main-box">
+        <div class="top-bar">
+            <button id="closeRestartAction" class="btn">X</button>
+        </div>
+        <div class="scrollable-content ">
+            <div class="inputs-box">
+                <label>number of organisms:</label>
+                <input type="range" id="noOrganismsInput" min="0" max="2000" step="10" value="300">
+                <label id="noOrganismsValue">300</label>
+            </div>
+            <div class="inputs-box">
+                <label>number of rocks:</label>
+                <input type="range" id="noRocksInput" min="0" max="1000" step="10" value="200">
+                <label id="noRocksValue">200</label>
+            </div>
+            <div class="inputs-box">
+                <label>size of planet:</label>
+                <input type="range" id="planetSizeInput" min="0" max="10" step="0.1" value="2">
+                <label id="planetSizeValue">2</label>
+            </div>
+            <div class="inputs-box">
+                <label>gravity factor:</label>
+                <input type="range" id="gravityInput" min="0.1" max="2" step="0.1" value="1">
+                <label id="gravityValue">1</label>
+            </div>
+            
+        </div>
+        <div class="top-bar">
+            <button id="restartAction" class="btn">Restart simulation</button>
+        </div>
+    </div>
+    <div id="infoBox" class="info-box">
+        <div class="top-bar">
+            <button id="orbitAction" class="btn">Start orbiting</button>
+            <button id="showRestartBox" class="btn">Restart simulation</button>
+        </div>
+        
+        <div id="dudeInfo"></div>
+    </div>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
